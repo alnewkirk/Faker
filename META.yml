@@ -1,0 +1,28 @@
+---
+abstract: 'Extensible Fake Data Generator'
+author:
+  - 'Al Newkirk <anewkirk@ana.io>'
+build_requires: {}
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.132830'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Faker
+requires:
+  Class::Load: 0
+  DateTime: 0
+  DateTime::TimeZone: 0
+  Exception::Tiny: 0
+  Hash::Merge::Simple: 0
+  Module::Find: 0
+  Moo: 0
+  perl: v5.14.0
+resources:
+  bugtracker: https://github.com/alnewkirk/Faker/issues
+  homepage: https://github.com/alnewkirk/Faker
+  repository: 'git://github.com/alnewkirk/Extensible Fake Data Generator.git'
+version: 0.001
