@@ -1,5 +1,8 @@
 Changelog for Faker
 
+0.02 2014-01-29T17:12:46
+ - Added Function::Parameters as a dependency to fix failing tests.
+
 0.01 2014-01-28T11:57:45
  - Initial CPAN release.
  - Initial commit.
