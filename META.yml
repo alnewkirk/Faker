@@ -17,13 +17,14 @@ requires:
   DateTime: 0
   DateTime::TimeZone: 0
   Exception::Tiny: 0
+  Function::Parameters: 0
   Hash::Merge::Simple: 0
   Module::Find: 0
   Moo: 0
   perl: v5.14.0
 resources:
   bugtracker: https://github.com/alnewkirk/Faker/issues
-  homepage: https://github.com/alnewkirk/Faker
+  homepage: http://search.cpan.org/dist/Faker/
   repository: git://github.com/alnewkirk/Faker.git
-version: 0.01
+version: 0.02
 x_authority: cpan:AWNCORP
