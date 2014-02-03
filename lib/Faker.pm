@@ -7,7 +7,7 @@ use Moo;
 use Function::Parameters;
 use Faker::Factory;
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 
 method maker (@arguments) {
@@ -26,7 +26,7 @@ Faker - Extensible Fake Data Generator
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 DESCRIPTION
 

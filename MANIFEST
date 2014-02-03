@@ -39,3 +39,4 @@ t/faker/generator/null.t
 t/faker/generator/unique.t
 t/load.t
 t/release-cpan-changes.t
+vagrantfile

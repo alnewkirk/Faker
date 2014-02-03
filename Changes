@@ -1,6 +1,9 @@
 Changelog for Faker
 
-0.03 2014-01-30T17:40:09
+0.04 2014-02-03T01:32:38
+ - Fixed test failures due to using given syntax without enabling it.
+
+0.03 2014-01-30T17:34:01
  - Merge branch 'issue/company-data-duplication' into devel
  - Updated dist.ini and added Type::Tiny dependency.
  - Updated gitignore and dist.ini.
