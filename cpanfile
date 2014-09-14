@@ -5,5 +5,5 @@ requires "Throwable" => "0.200011";
 requires "perl" => "v5.10.0";
 
 on 'configure' => sub {
-  requires "ExtUtils::MakeMaker" => "6.30";
+  requires "ExtUtils::MakeMaker" => "0";
 };

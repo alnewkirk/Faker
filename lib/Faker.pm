@@ -116,7 +116,8 @@ bootstrap your database, create good-looking XML documents, fill-in your
 persistence to stress test it, or anonymize data taken from a production
 service, Faker makes it easy to generate fake data with some semantics. B<Note:
 This is an early release available for testing and feedback and as such is
-subject to change.>
+subject to change. Code using versions prior to Faker-0.10 are no longer
+supported. Please check your version and update if necessary.>
 
 =attr locale
 

@@ -1,8 +1,9 @@
 Changelog for Faker
 
-0.10 2014-09-14T12:21:24
- - Updated provider documentation.
+0.10 2014-09-14T13:14:36
  - Updated POD, Makefile and README.
+ - Updated provider documentation.
+ - Changed PWP::Encoding to PWP::SingleEncoding.
  - Completely refactored, Reduced size, Less abstractions.
 
 0.09 2014-04-04T04:10:14

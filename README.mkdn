@@ -52,7 +52,8 @@ bootstrap your database, create good-looking XML documents, fill-in your
 persistence to stress test it, or anonymize data taken from a production
 service, Faker makes it easy to generate fake data with some semantics. __Note:
 This is an early release available for testing and feedback and as such is
-subject to change.__
+subject to change. Code using versions prior to Faker-0.10 are no longer
+supported. Please check your version and update if necessary.__
 
 # ATTRIBUTES
 
@@ -99,6 +100,10 @@ find, instantiate, cache, and return a provider object.
 # AUTHOR
 
 Al Newkirk <anewkirk@ana.io>
+
+# CONTRIBUTOR
+
+Сергей Романов <sromanov-dev@yandex.ru>
 
 # COPYRIGHT AND LICENSE
 

@@ -44,7 +44,9 @@ DESCRIPTION
     fill-in your persistence to stress test it, or anonymize data taken from
     a production service, Faker makes it easy to generate fake data with
     some semantics. Note: This is an early release available for testing and
-    feedback and as such is subject to change.
+    feedback and as such is subject to change. Code using versions prior to
+    Faker-0.10 are no longer supported. Please check your version and update
+    if necessary.
 
 ATTRIBUTES
   locale
@@ -84,6 +86,9 @@ METHODS
 
 AUTHOR
     Al Newkirk <anewkirk@ana.io>
+
+CONTRIBUTOR
+    Сергей Романов <sromanov-dev@yandex.ru>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2014 by Al Newkirk.
