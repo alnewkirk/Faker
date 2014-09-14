@@ -72,13 +72,13 @@ sub provider {
 
 1;
 
-__END__
+=encoding utf8
 
 =head1 SYNOPSIS
 
     use Faker;
 
-    my $faker = Faker->new(locale => 'en_US');
+    my $faker = Faker->new;
     my $address = $faker->provider('Address');
 
     my $address_line1 = $address->line1;
@@ -94,7 +94,7 @@ __END__
     my $latitude  = $address->latitude;
     my $longitude = $address->longitude;
 
-    say "$longitude, $latitude";
+    say "$latitude, $longitude";
 
     my $person = $faker->provider('Person');
 
@@ -117,5 +117,43 @@ persistence to stress test it, or anonymize data taken from a production
 service, Faker makes it easy to generate fake data with some semantics. B<Note:
 This is an early release available for testing and feedback and as such is
 subject to change.>
+
+=attr locale
+
+    $faker->locale('en_US');
+    my $locale = $faker->locale;
+
+The locale attribute helps the provider method find localized providers.
+
+=attr namespace
+
+    $faker->namespace('MyApp::Faker');
+    my $namespace = $faker->namespace;
+
+The namespace attribute helps the provider method find user-defined and/or
+localized providers.
+
+=attr providers
+
+    $faker->providers({});
+    my $providers = $faker->providers;
+
+The providers attribute contains a dispatch table implemented using a hashref
+where where the keys are provider short-names and values are the corresponding
+provider objects.
+
+=method provider
+
+    my $provider = $faker->provider('Author');
+    # tries Faker::Provider::en_US::Author
+    # tries Faker::Provider::Author
+
+    $faker->namespace('MyApp::Faker')
+    $faker->locale('en_US')
+    # also tries MyApp::Faker::en_US::Author
+    # also tries MyApp::Faker::Author
+
+The provider method, using the namespace and locale attributes, attempts to
+find, instantiate, cache, and return a provider object.
 
 =cut

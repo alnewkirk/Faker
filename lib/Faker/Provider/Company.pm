@@ -1,3 +1,4 @@
+# ABSTRACT: Faker Standard Company Provider
 package Faker::Provider::Company;
 
 use Bubblegum::Class;
@@ -16,6 +17,45 @@ sub name_suffix {
 }
 
 1;
+
+=encoding utf8
+
+=head1 SYNOPSIS
+
+    use Faker;
+    use Faker::Provider::Company;
+
+    my $company = Faker::Provider::Company->new(
+        factory => Faker->new
+    );
+
+    say $company->name;
+
+=head1 DESCRIPTION
+
+Faker::Provider::Company is a L<Faker> provider which provides fake company
+data. B<Note: This is an early release available for testing and feedback and as
+such is subject to change.>
+
+=method name
+
+    $address->name;
+    # Padberg Co.
+    # Russel Ltd.
+    # Murazik Co.
+
+The name method generates a random ficticious company name.
+
+=method name_suffix
+
+    $address->name_suffix;
+    # Co.
+    # Inc.
+    # Co.
+
+The name_suffix method generates a random ficticious company name suffix.
+
+=cut
 
 __DATA__
 
